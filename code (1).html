@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahdi's For Sale Offers</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f8ff; }  /* Light blue background for a subtle theme */
+        header { background-color: #007BFF; color: white; padding: 10px; text-align: center; }  /* Blue header */
+        button { background-color: #007BFF; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; margin: 5px; }  /* Blue buttons with white text */
+        button:hover { background-color: #0056b3; }  /* Darker blue on hover */
+        .product-card { background-color: white; border: 1px solid #ddd; border-radius: 5px; padding: 15px; margin: 10px; display: inline-block; width: 250px; text-align: center; }
+        .product-gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+        .image-gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .image-gallery img { max-width: 200px; height: auto; border-radius: 5px; }
+        .excellent-section { background-color: #e3f2fd; padding: 15px; border-radius: 5px; text-align: center; margin: 20px 0; }  /* Light blue section */
+        #fact-display { font-weight: bold; margin-top: 10px; }
+        footer { text-align: center; margin-top: 20px; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mahdi's For Sale Offers</h1>
+        <p>Check out my amazing products and services for sale!</p>
+        <p><strong>Contact:</strong> Mahdi Rachdaoui | Phone: 0703229364</p>
+        <button onclick="alert('Hello! Contact me at 0703229364 to buy or inquire.')">Contact for Sales</button>
+    </header>
+    
+    <section>
+        <h2>Featured Products for Sale</h2>
+        <div class="product-gallery">
+            <div class="product-card">
+                <img src="your-product1.jpg" alt="Product 1 Image" style="width: 100%; height: auto;">
+                <h3>Product 1: Awesome Gadget</h3>
+                <p>Description: This is an excellent gadget for everyday use. Perfect for tech lovers!</p>
+                <p><strong>Price: $29.99</strong></p>
+                <button onclick="alert('Thanks for interest! Call 0703229364 to purchase Product 1.')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="your-product2.jpg" alt="Product 2 Image" style="width: 100%; height: auto;">
+                <h3>Product 2: Custom Service</h3>
+                <p>Description: Personalized service tailored to your needs. High quality guaranteed!</p>
+                <p><strong>Price: $49.99</strong></p>
+                <button onclick="alert('Thanks for interest! Call 0703229364 to purchase Product 2.')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="your-product3.jpg" alt="Product 3 Image" style="width: 100%; height: auto;">
+                <h3>Product 3: Vintage Item</h3>
+                <p>Description: Rare vintage collectible. A must-have for collectors!</p>
+                <p><strong>Price: $99.99</strong></p>
+                <button onclick="alert('Thanks for interest! Call 0703229364 to purchase Product 3.')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="your-product4.jpg" alt="Product 4 Image" style="width: 100%; height: auto;">
+                <h3>Product 4: Digital Download</h3>
+                <p>Description: Instant download of exclusive content. Great value!</p>
+                <p><strong>Price: $9.99</strong></p>
+                <button onclick="alert('Thanks for interest! Call 0703229364 to purchase Product 4.')">Buy Now</button>
+            </div>
+        </div>
+        <!-- Replace "your-product1.jpg" etc. with actual product image files or URLs. Add more cards as needed. -->
+    </section>
+    
+    <article>
+        <h2>My Pictures Gallery</h2>
+        <div class="image-gallery">
+            <img src="your-picture1.jpg" alt="Description of picture 1">
+            <img src="your-picture2.jpg" alt="Description of picture 2">
+            <img src="your-picture3.jpg" alt="Description of picture 3">
+            <img src="your-picture4.jpg" alt="Description of picture 4">
+        </div>
+        <!-- Replace with your actual images. -->
+    </article>
+    
+    <article class="excellent-section">
+        <h2>Excellent Things</h2>
+        <p>Why buy from me? Here's what's excellent:</p>
+        <ul>
+            <li>High-quality products with fast delivery.</li>
+            <li>Personalized customer service.</li>
+            <li>Satisfaction guaranteed!</li>
+        </ul>
+        <h3>Random Excellent Fact</h3>
+        <button onclick="showRandomFact()">Get an Excellent Fact!</button>
+        <p id="fact-display">Click the button to reveal a fun fact!</p>
+    </article>
+    
+    <footer>
+        <p>&copy; 2023 Mahdi Rachdaoui. All rights reserved. | For inquiries: 0703229364</p>
+    </footer>
+    
+    <script>
+        function showRandomFact() {
+            const facts = [
+                "Did you know? The shortest war in history lasted only 38-45 minutes (between Britain and Zanzibar in 1896)!",
+                "Octopuses have three hearts and blue blood—how excellent is that?",
+                "Honey never spoils; archaeologists have found edible honey in ancient Egyptian tombs!",
+                "A group of flamingos is called a 'flamboyance'—perfect for an excellent website!",
+                "The Great Wall of China isn't visible from space with the naked eye, but your website will be!"
+            ];
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById('fact-display').textContent = facts[randomIndex];
+        }
+    </script>
+</body>
+</html>
